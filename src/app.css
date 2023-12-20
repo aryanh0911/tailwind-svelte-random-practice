@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.logo-font {
+  @apply text-red-600 font-extrabold text-3xl
+}
+
+.logo-blue {
+  @apply text-blue-900 font-extrabold text-3xl
+}
