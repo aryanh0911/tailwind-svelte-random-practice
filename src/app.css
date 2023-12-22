@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 
-.logo-font {
+.logo-red {
   @apply text-red-600 font-extrabold text-3xl
 }
 

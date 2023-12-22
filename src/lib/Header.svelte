@@ -1,16 +1,39 @@
 <script>
 
+        import { gsap } from "gsap";
+        import { ScrollTrigger } from "gsap/ScrollTrigger";
+        gsap.registerPlugin(ScrollTrigger);
+        import { onMount } from "svelte"
+
+
     let openSideNav = ()=>{
         if(document.querySelector('#side-nav').classList.contains("hidden")){
             document.querySelector('#side-nav').classList.remove("hidden")
         }
+       
+        if(document.querySelector('#modalSection').classList.contains("hidden")){
+            document.querySelector('#modalSection').classList.remove("hidden")
+        }
 
     }
+
+
+// GSAP ANIMATIONS
+    onMount(()=>{
+
+        var tl = gsap.timeline()
+
+        tl.from("#logo",{
+            y:"-10",
+            opacity: 0,
+        })
+    });
+
 </script>
 
 
 <header class="p-12 pb-9 flex justify-between border border-b-gray-400 border-spacing-2">
-    <a href="" class="logo-blue"> Logo </a>
+    <a href="" id="logo" class="logo-blue"> Logo </a>
 
     <nav class="flex gap-7 text-xl ">
 
