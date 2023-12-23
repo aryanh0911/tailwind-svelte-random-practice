@@ -1,17 +1,22 @@
 <script>
     export let title, content
+
+    export let cardClasses; //tailwind classes for card element
+
 </script>
 
 
 
-<div id="card" class="card p-4 pb-16 max-w-lg border border-black rounded-lg mb-8 mr-auto ml-auto">
-    <h2 class="font-bold">{title}</h2>
-    <p class="mt-5">{content}</p>
+<div id="card" class={cardClasses}>
+    <h2 class="font-bold text-gray-700">{title}</h2>
+    <p class="mt-5 text-gray-500">{content}</p>
 </div>
 
 
 
 
 <style>
-
+    #card {
+        background-color: rgba(128, 128, 128, 0.058);
+    }
 </style>
