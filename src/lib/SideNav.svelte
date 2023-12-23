@@ -40,7 +40,7 @@
         top: 0;
         bottom: 0;
         width: 100vw;
-        height: 125vh;
+        height: 140vh;
         backdrop-filter: blur(2px);
     }
 </style>
